@@ -1,5 +1,6 @@
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     kitronik_VIEW128x64.clear()
+    kitronik_VIEW128x64.show("" + convertToText(base) + " elevado a " + convertToText(expoente), 1, kitronik_VIEW128x64.ShowAlign.Centre, kitronik_VIEW128x64.FontSelection.Normal)
     for (let index = 0; index < expoente; index++) {
         potencia += base * base
     }
